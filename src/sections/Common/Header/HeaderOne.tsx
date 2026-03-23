@@ -64,7 +64,7 @@ const HeaderOne = () => {
                 </div>
             </div>
 
-            <MultiPageMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            <MultiPageMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} navigation={navigation} loading={loading} />
 
             <header className="nav-header header-layout1 header-decoration">
                 {/* Top bar */}

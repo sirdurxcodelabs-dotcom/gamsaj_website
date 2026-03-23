@@ -60,7 +60,7 @@ const HeaderTwo = () => {
                 </div>
             </div>
 
-            <MultiPageMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            <MultiPageMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} navigation={navigation} loading={loading} />
 
             <header className="nav-header header-layout3">
                 <div className={`sticky-wrapper ${isSticky ? "sticky" : ""}`}>
