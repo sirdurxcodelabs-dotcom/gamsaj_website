@@ -1,13 +1,15 @@
  
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import MultiPageMobileMenu from "../MultiPageMobileMenu/MultiPageMobileMenu"; 
+import MultiPageMobileMenu from "../MultiPageMobileMenu/MultiPageMobileMenu";
+import { useNavigation } from "../../../hooks/useNavigation";
 
 const HeaderOneOp = () => {
     const [isSticky, setIsSticky] = useState(false);
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+    const { navigation, loading } = useNavigation();
     // const sidebarRef = useRef(null);
     const sidebarRef = useRef<HTMLElement | any>(null);
 
@@ -161,7 +163,7 @@ const HeaderOneOp = () => {
                     </div>
                 </div>
             </div>
-            <MultiPageMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}></MultiPageMobileMenu>
+            <MultiPageMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} navigation={navigation} loading={loading} />
             <header className="nav-header header-layout1">
                 <div className="header-top">
                     <div className="container">
