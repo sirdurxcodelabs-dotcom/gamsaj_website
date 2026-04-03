@@ -16,8 +16,6 @@ const Contact = () => {
 		canonical: '/contact',
 	})
 	return (
-const Contact = () => {
-	return (
 		<Wrapper>
 			<div style={{ overflow: "hidden" }}>
 				<HeaderOne />
