@@ -6,7 +6,6 @@ import ScrollTopButton from "../Common/Scroll/Scroll";
 import Wrapper from "../Common/Wrapper";
 import About from "../Home-1/About/About";
 import Blog from "../Home-1/Blog/Blog";
-import Client from "../Home-1/Client/Client";
 import Cta from "../Home-1/Cta/Cta";
 import Hero from "../Home-1/Hero/Hero";
 import Portfolio from "../Home-1/Portfolio/Portfolio";
@@ -38,7 +37,6 @@ const HomeOne = () => {
 				<CounterOne />
 				<Testimonial />
 				<Team />
-				<Client />
 				<Blog />
 				<FooterTwo />
 				<ScrollTopButton />
